@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <div class="calculadora">
+      <input type="text" id="resultado" readonly>
+      <button class="especial" onclick="clearResult()">C</button>
+      <button class="special" onclick="backspace()">&#8592;</button>
+      <button class="operadores" onclick="append('.')">.</button>
+      <button class="numeros" onclick="append('7')">7</button>
+      <button class="numeros" onclick="append('8')">8</button>
+      <button class="numeros" onclick="append('9')">9</button>
+      <button class="numeros" onclick="append('4')">4</button>
+      <button class="numeros" onclick="append('5')">5</button>
+      <button class="numeros" onclick="append('6')">6</button>
+      <button class="numeros" onclick="append('1')">1</button>
+      <button class="numeros" onclick="append('2')">2</button>
+      <button class="numeros" onclick="append('3')">3</button>
+      <button class="numeros" onclick="append('0')">0</button>
+      <button class="operadores" onclick="append('+')">+</button>
+      <button class="operadores" onclick="append('-')">-</button>
+      <button class="operadores" onclick="append('*')">*</button>
+      <button class="operadores" onclick="append('/')">/</button>
+      <button class="especial" onclick="calculate()">=</button>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>
